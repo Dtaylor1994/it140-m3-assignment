@@ -10,17 +10,17 @@
 
 BEGIN paycheck_calculator
 
-    TODO: Obtain the required program input.
+    LET hoursworked = INPUT "Enter the number of hours worked."
 
-    IF TODO: Replace with the decision condition that separates the pay-rule cases THEN
-        TODO: Show the processing steps for this decision path.
+    IF hoursWorked <= 40 THEN
+        LET paycheck = hoursWorked * 20
     ELSE
-        TODO: Show the processing steps for the other decision path.
+        LET paycheck = (40 * 20) + ((hoursWorked - 40) * 30)
     ENDIF
 
-    TODO: Output the calculated weekly paycheck.
+    OUTPUT paycheck
 
 END paycheck_calculator
 
-# === References ===
-# TODO: List outside sources or assistance you actually used, or delete this line.
+
+
